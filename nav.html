@@ -41,8 +41,53 @@
 
         }
         .wrap .nav-list{
-            width: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .nav-item{
+            font-size: 21px;
+            font-weight: 100;
+            position: relative;
+            top: 50%;
+            line-height: 60PX;
+            width: 100%;
+            overflow: hidden;
+            transition: 1s;
+            padding: 2px 5px;
+            color:#888;
+        }
+        .nav-item .item-anchor{
+            color:#888;
+            text-decoration: none;
+        }
+        .nav-item:hover .item-anchor{
+
+            color: white;
             
+        }
+        .nav-item:hover{
+
+            color: white;
+            /*-webkit-animation: pulse;*/
+            animation: pulse 1s;
+        }
+        @keyframes pulse {
+            from {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+
+            50% {
+                -webkit-transform: scale3d(1.2, 1.05, 1.05);
+                transform: scale3d(1.2, 1.05, 1.05);
+            }
+
+            to {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
         }
     </style>
 </head>
@@ -58,27 +103,27 @@
         </div>
        <ul class="nav-list">
            <li class="nav-item">
-                <a href="/" class="item-anchor">网站首页</a>
+                <a href="javascript:;" class="item-anchor">网站首页</a>
                 <!--<span class="yupca" style="background-image: url()"></span>-->
             </li>
             <li class="nav-item">
-                <a href="/nav/2.html" class="item-anchor">关于大正</a>
+                <a href="javascript:;" class="item-anchor">关于大正</a>
                 <!--<span class="yupca" style="background-image: url()"></span>-->
             </li>
             <li class="nav-item">
-                <a href="/nav/9.html" class="item-anchor">最新产品</a>
+                <a href="javascript:;" class="item-anchor">最新产品</a>
                 <!--<span class="yupca" style="background-image: url()"></span>-->
             </li>
             <li class="nav-item">
-                <a href="/nav/10.html" class="item-anchor">新闻动态</a>
+                <a href="javascript:;" class="item-anchor">新闻动态</a>
                 <!--<span class="yupca" style="background-image: url()"></span>-->
             </li>
             <li class="nav-item">
-                <a href="/nav/12.html" class="item-anchor">安全飞行</a>
+                <a href="javascript:;" class="item-anchor">安全飞行</a>
                 <!--<span class="yupca" style="background-image: url()"></span>-->
             </li>
             <li class="nav-item">
-                <a href="/nav/14.html" class="item-anchor">联系我们</a>
+                <a href="javascript:;" class="item-anchor">联系我们</a>
                 <!--<span class="yupca" style="background-image: url()"></span>-->
             </li>
         </ul>
