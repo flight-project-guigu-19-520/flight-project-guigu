@@ -4,95 +4,11 @@
     <meta charset="UTF-8">
     <title>导航页面</title>
     <link rel="stylesheet" href="css/navigation/reset.css">
-    <style>
-        html,body {
-            height: 100%;
-        }
-        .wrap{
-            box-sizing: border-box;
-            padding: 50px 100px 0;
-            width: 100%;
-            height: 100%;
-            background-image: url("img/navigation/dhbj4.jpg");
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-        }
-        .wrap  .logo{
-            float: left;
-        }
-        .wrap  .logo img{
-            width: 89px;
-            height: 69px;
-        }
-        .key {
-            width: 80px;
-            height: 80px;
-            float: right;
-            background-color: rgba(255,255,255,0.2);
-            border-radius: 50%;
-        }
-        .key .key_ago{
-            color: #fff;
-            text-align: center;
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 80px;
-            transition: .3s;
-
-        }
-        .wrap .nav-list{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-        }
-        .nav-item{
-            font-size: 21px;
-            font-weight: 100;
-            position: relative;
-            top: 50%;
-            line-height: 60PX;
-            width: 100%;
-            overflow: hidden;
-            transition: 1s;
-            padding: 2px 5px;
-            color:#888;
-        }
-        .nav-item .item-anchor{
-            color:#888;
-            text-decoration: none;
-        }
-        .nav-item:hover .item-anchor{
-
-            color: white;
-            
-        }
-        .nav-item:hover{
-
-            color: white;
-            /*-webkit-animation: pulse;*/
-            animation: pulse 1s;
-        }
-        @keyframes pulse {
-            from {
-                -webkit-transform: scale3d(1, 1, 1);
-                transform: scale3d(1, 1, 1);
-            }
-
-            50% {
-                -webkit-transform: scale3d(1.2, 1.05, 1.05);
-                transform: scale3d(1.2, 1.05, 1.05);
-            }
-
-            to {
-                -webkit-transform: scale3d(1, 1, 1);
-                transform: scale3d(1, 1, 1);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/navigation/navigation.css">
 </head>
 <body>
     <div class="wrap">
+        <div class="nav_background"></div>
         <h1 class="logo">
             <img src="img/navigation/logo.png" alt="">
         </h1>
@@ -104,30 +20,29 @@
        <ul class="nav-list">
            <li class="nav-item">
                 <a href="javascript:;" class="item-anchor">网站首页</a>
-                <!--<span class="yupca" style="background-image: url()"></span>-->
             </li>
             <li class="nav-item">
                 <a href="javascript:;" class="item-anchor">关于大正</a>
-                <!--<span class="yupca" style="background-image: url()"></span>-->
             </li>
             <li class="nav-item">
                 <a href="javascript:;" class="item-anchor">最新产品</a>
-                <!--<span class="yupca" style="background-image: url()"></span>-->
             </li>
             <li class="nav-item">
                 <a href="javascript:;" class="item-anchor">新闻动态</a>
-                <!--<span class="yupca" style="background-image: url()"></span>-->
             </li>
             <li class="nav-item">
                 <a href="javascript:;" class="item-anchor">安全飞行</a>
-                <!--<span class="yupca" style="background-image: url()"></span>-->
             </li>
             <li class="nav-item">
                 <a href="javascript:;" class="item-anchor">联系我们</a>
-                <!--<span class="yupca" style="background-image: url()"></span>-->
             </li>
         </ul>
 
     </div>
+    <script src="js/navigation/navigation.js"></script>
+    <script>
+        <!--导航页面js调用-->
+        navigation();
+    </script>
 </body>
 </html>
