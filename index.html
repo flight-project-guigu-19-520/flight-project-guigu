@@ -3,8 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <title>首页</title>
+    <link rel="stylesheet" href="css/navigation/reset.css">
+    <link rel="stylesheet" href="css/navigation/navigation.css">
+    <link rel="stylesheet" href="css/index_page/index_page.css">
 </head>
 <body>
+    <!--导航页面-->
+    <div class="nav-wrap">
+        <div class="nav_background"></div>
+        <h1 class="logo">
+            <img src="img/navigation/logo.png" alt="">
+        </h1>
+        <div class="key">
+            <div class="key_ago">一MENU</div>
+            <span class="key_later key_later_top"></span>
+            <span class="key_later key_later_bottom"></span>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="javascript:;" class="item-anchor">网站首页</a>
+            </li>
+            <li class="nav-item">
+                <a href="javascript:;" class="item-anchor">关于大正</a>
+            </li>
+            <li class="nav-item">
+                <a href="javascript:;" class="item-anchor">最新产品</a>
+            </li>
+            <li class="nav-item">
+                <a href="javascript:;" class="item-anchor">新闻动态</a>
+            </li>
+            <li class="nav-item">
+                <a href="javascript:;" class="item-anchor">安全飞行</a>
+            </li>
+            <li class="nav-item">
+                <a href="javascript:;" class="item-anchor">联系我们</a>
+            </li>
+        </ul>
 
+    </div>
+    <script src="js/navigation/navigation.js"></script>
+    <script>
+        <!--导航页面js调用-->
+        navigation();
+    </script>
+    <!--首页-->
+    <!--第一屏-->
+    <div class="homePage_wrap">
+        <header class="homePage_header">
+            <ul class="scene">
+                <li class="layer headerImg_w1" data-depth="0.2"><img src="img/index_page/wz4.png"></li>
+                <li class="layer headerImg_w2"><img src="img/index_page/wz1.png"></li>
+                <li class="layer headerImg_f" data-depth="0.80"><img src="img/index_page/big.png"></li>
+            </ul>
+        </header>
+    </div>
+    <script src="js/index_page/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index_page/vidbg.min.js"></script>
+    <script src="js/index_page/parallax.js"></script>
+    <script>
+        var scene = document.querySelector('.scene');
+        var parallax = new Parallax(scene);
+
+
+        $('.homePage_header').vidbg({
+            'mp4': 'img/index_page/shipin.mp4',
+            'webm': 'img/index_page/shipinzhuan.webm',
+        }, {
+            volume: 1,
+            playbackRate: 1,
+            muted: true,
+            loop: true,
+            position: '50% 50%',
+            resizing: true,
+            overlay: true,
+        });
+    </script>
 </body>
 </html>
