@@ -5,7 +5,7 @@
             var keyAgo=key.querySelector(".key_ago");
             var keyLater=key.querySelectorAll(".key_later");
             var nav_background=document.querySelector(".nav_background");
-            var navItem=document.querySelectorAll(".wrap .nav-list .nav-item");
+            var navItem=document.querySelectorAll(".nav-list .nav-item");
             var aItem = document.querySelectorAll(".item-anchor");
             var ago=true;
 

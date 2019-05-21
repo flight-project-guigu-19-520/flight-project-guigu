@@ -1,7 +1,7 @@
 html,body {
     height: 100%;
 }
-.wrap{
+.nav-wrap{
     position: relative;
     box-sizing: border-box;
     width: 100%;
@@ -18,12 +18,12 @@ html,body {
     transition: opacity 1s linear 1s,background-position 3s linear .5s;
 
 }
-.wrap  .logo{
+.nav-wrap  .logo{
     position: absolute;
     left:100px;
     top: 50px;
 }
-.wrap  .logo img{
+.nav-wrap  .logo img{
     width: 89px;
     height: 69px;
 }
@@ -46,7 +46,7 @@ html,body {
     transition: .3s;
     /*display: none;*/
 }
-.wrap .nav-list{
+.nav-wrap .nav-list{
     width: 150px;
     position: absolute;
     top: 50%;
@@ -99,7 +99,7 @@ html,body {
 .key:hover .key_later_bottom{
     transform: translate(-50%,-50%) rotate(-15deg);
 }
-.wrap .nav-list .nav-item{
+.nav-wrap .nav-list .nav-item{
     opacity: 0;
     /*transition: all 1s linear 1s;*/
 }
