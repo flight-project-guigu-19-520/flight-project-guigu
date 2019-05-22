@@ -38,7 +38,7 @@ html,body {
     height: 80px;
     /*background-color: rgba(255,255,255,0.2);*/
     border-radius: 50%;
-    background-color: rgba(255,255,255,.2);
+    background-color: rgba(0,0,0,.2);
 }
 .key .key_ago{
     color: #fff;
