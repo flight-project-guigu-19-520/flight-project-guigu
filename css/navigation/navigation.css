@@ -3,22 +3,26 @@ html,body {
 }
 .nav-wrap{
     position: fixed;
-    top: 0;
+    top: -650px;
     left: 0;
     box-sizing: border-box;
     width: 100%;
     height: 650px;
     z-index: 50;
+    transition: all 3s;
 }
 .nav_background{
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     opacity: .2;
+    /*background-image: url("img/navigation/dhbj4.jpg");*/
     background-image: url("../../img/navigation/dhbj4.jpg");
     background-size: 1620px 980px;
-    background-position: 0 -980px;
     background-repeat: no-repeat;
-    transition: opacity 1s linear 1s,background-position 3s linear .5s;
+    transition: opacity 2s linear 1s;
 
 }
 .nav-wrap  .logo{
@@ -26,19 +30,14 @@ html,body {
     left:100px;
     top: 50px;
 }
-.nav-wrap  .logo img{
-    width: 89px;
-    height: 69px;
-}
 .key {
     position: fixed;
     right: 100px;
     top: 50px;
     width: 80px;
     height: 80px;
-    /*background-color: rgba(255,255,255,0.2);*/
     border-radius: 50%;
-    background-color: rgba(0,0,0,.2);
+    background-color: rgba(0,0,0,.3);
 }
 .key .key_ago{
     color: #fff;
@@ -47,24 +46,25 @@ html,body {
     font-size: 14px;
     line-height: 80px;
     transition: .3s;
-    /*display: none;*/
 }
 .nav-wrap .nav-list{
-    width: 150px;
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 150px;
     transform: translate(-50%,-50%);
 }
 
+
+
+
 .item-anchor{
-    text-decoration: none;
+    /*text-decoration: none;*/
     font-size: 21px;
     font-weight: 100;
     position: relative;
     top: 50%;
     line-height: 60px;
-    /*//width: 100%;*/
     overflow: hidden;
     transition: 1s;
     padding: 2px 5px;
@@ -81,12 +81,13 @@ html,body {
     position: absolute;
     top: 50%;
     left: 50%;
-    display: inline-block;
+    display: none;
+    /*display: inline-block;*/
     width: 35px;
     height: 2px;
     background-color: white;
     transition: 1s;
-    opacity: 0;
+    /*opacity: 0;*/
 }
 .key_later_top{
     transform: translate(-50%,-50%) rotate(45deg);
@@ -103,7 +104,6 @@ html,body {
 .key:hover .key_later_bottom{
     transform: translate(-50%,-50%) rotate(-15deg);
 }
-.nav-wrap .nav-list .nav-item{
-    opacity: 0;
-    /*transition: all 1s linear 1s;*/
-}
+/*.nav-wrap .nav-list .nav-item{*/
+/*opacity: 0;*/
+/*}*/

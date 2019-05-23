@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/navigation/reset.css">
     <link rel="stylesheet" href="css/navigation/navigation.css">
     <link rel="stylesheet" href="css/index_page/index_page.css">
+    <link rel="stylesheet" href="css/index_page/index_style.css">
 </head>
 <body>
     <!--导航页面-->
@@ -71,6 +72,9 @@
                 <div class="second_content">
                     <header>
                         <h2>ABOUT US</h2>
+                        <div class="bj_3">
+                            <img src="img/index_page/about3.png" alt="">
+                        </div>
                         <h3>心无界·自飞翔</h3>
                         <p>
                             一家专门从事专用涡喷发动机、固定翼无人机、无人直升机、远距信息传输系统、特种机载设备、飞控指挥车和无人载人气垫船、车辆自动预热系统等研发、生产和销售的高新技术企业。
@@ -80,16 +84,94 @@
                     </header>
                 </div>
             </div>
+            <!--轮播图-->
+            <div id="slider">
+                <a href="#"><img src="img/index_page/KmxMPI5wQfuib_gujluBpw.jpg"/></a>
+                <a href="#"><img src="img/index_page/MJb3jo_nT86n6ZIeaY9o0w.jpg"/></a>
+                <a href="#"><img src="img/index_page/pXtStHSGR_26rHBf-zio4A.jpg"/></a>
+            </div>
+            <article>
+                <h1><img src="img/index_page/wz10_wps.png" alt=""></h1>
+                <p class="p_one">-NEVER SEEN A SINGLE EYE WITH WISDOM-</p>
+                <p class="p_two">发现全新的飞行世界</p>
+                <p class="p_three">生活不止眼前的坐井观天</p>
+                <p class="p_four">还要去探索远方的地平线</p>
+            </article>
         </div>
+        <!--第三屏-->
+        <div class="The_third_screen">
+            <div class="third_screen_1">
+                <img class="third_screen_1_fj1" src="img/index_page/fj2.png" alt="">
+                <div class="the_one">
+                    <img src="img/index_page/fj3.jpg" alt="">
+                    <p class="the_link">
+                        <a href="javascript:;">-MORE-</a>
+                    </p>
+                </div>
+                <div class="the_two">
+                    <img src="img/index_page/fj4.jpg" alt="">
+                    <p class="the_link">
+                        <a href="javascript:;">-MORE-</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <!--第四屏-->
+        <div class="Small_video">
+            <img src="img/index_page/wz13.png" alt="">
+            <p>打破黑夜的枷锁</p>
+
+        </div>
+        <!--第五屏-->
+        <div class="news">
+            <div class="content">
+                <p class="title">NEWS</p>
+                <p class="subhead">精彩瞬间</p>
+                <a class="news_1" href="javascript:;"><img src="img/index_page/rw_2.jpg" alt=""></a>
+                <a class="news_2" href="javascript:;"><img src="img/index_page/fj5.jpg" alt=""></a>
+
+                <ul class="information">
+                    <li class="information_item information_left">
+                        <ul>
+                            <li><a href="javascript:;">植保无人机喷药和传统配药技术的区别</a></li>
+                            <li><a href="javascript:;">有哪些技术会影响无人机的精准导航定位</a></li>
+                            <li><a href="javascript:;">无人机任务规划需注意的因素</a></li>
+                            <li><a href="javascript:;">三步拥有厘米级城市三维模型</a></li>
+                        </ul>
+                    </li>
+                    <li class="information_item information_right">
+                        <ul>
+                            <li><a href="javascript:;">showtime！无人机“烟火秀”</a></li>
+                            <li><a href="javascript:;">不忘初心，继续前进！</a></li>
+                            <li><a href="javascript:;">科技以人为本</a></li>
+                            <li><a href="javascript:;">心有翼，梦飞扬</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <!--页脚-->
+        <footer class="footer">
+            <img src="img/index_page/logo.png" alt="">
+            <p class="word">换个角度看世界</p>
+            <p class="uav">UAV</p>
+            <p class="copy">版权所有：黑龙江省大正赛富投资管理有限公司     网站建设：中企动力哈尔滨黑ICP备案********号</p>
+        </footer>
     </div>
     <script src="js/index_page/jquery.min.js"></script>
+    <script src="js/index_page/vmc.slider.full.min.js"></script>
+
     <script type="text/javascript" src="js/index_page/vidbg.min.js"></script>
     <script src="js/index_page/parallax.js"></script>
     <script>
+
+
+        <!--第一屏动画-->
         var scene = document.querySelector('.scene');
         var parallax = new Parallax(scene);
-
-
+        //背景视频
         $('.homePage_header').vidbg({
             'mp4': 'img/index_page/shipin.mp4',
             'webm': 'img/index_page/shipinzhuan.webm',
@@ -102,6 +184,42 @@
             resizing: true,
             overlay: true,
         });
+        $('.Small_video').vidbg({
+            'mp4': 'img/index_page/intro-bg-v2.mp4',
+            // 'webm': 'img/index_page/shipinzhuan.webm',
+        }, {
+            volume: 1,
+            playbackRate: 1,
+            muted: true,
+            loop: true,
+            position: '50% 50%',
+            resizing: true,
+            overlay: true,
+        });
+
+        // 轮播图
+        /* 配置选项 */
+        var options = {
+            width: 1200, // 宽度
+            height: 777, // 高度
+            gridCol: 10, // 网格列数
+            gridRow: 5, // 网格行数
+            gridVertical: 20, // 栅格列数
+            gridHorizontal: 10, // 栅格行数
+            autoPlay: true, // 自动播放
+            ascending: true, // 图片按照升序播放
+            effects: [ // 使用的转场动画效果
+                'fade', 'fadeLeft', 'fadeRight', 'fadeTop', 'fadeBottom', 'fadeTopLeft', 'fadeBottomRight',
+                'blindsLeft', 'blindsRight', 'blindsTop', 'blindsBottom', 'blindsTopLeft', 'blindsBottomRight',
+                'curtainLeft', 'curtainRight', 'interlaceLeft', 'interlaceRight', 'mosaic', 'bomb', 'fumes'
+            ],
+            ie6Tidy: false, // IE6下精简效果
+            random: false, // 随机使用转场动画效果
+            duration: 4000, // 图片停留时长（毫秒）
+            speed: 900 // 转场效果时长（毫秒）
+        };
+        /* 创建轮播效果 */
+        $('#slider').vmcSlider(options);
     </script>
 </body>
 </html>

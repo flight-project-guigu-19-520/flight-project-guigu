@@ -1,6 +1,3 @@
-body{
-    height: 2000px;
-}
 .homePage_wrap{
     position: absolute;
     left: 0;
@@ -113,15 +110,6 @@ body{
         height:2000px;
         background-color: black;
         overflow: hidden;
-        //z-index: 10;
-        //.imaginary_line{
-        //    position: absolute;
-        //    left: 50%;
-        //    top: -60px;
-        //    width: 0;
-        //    height: 50px;
-        //    border-left: 1px dotted #ffffff75;
-        //}
         .link_particulars{
             position: absolute;
             top: 10px;
@@ -134,9 +122,22 @@ body{
             height: 28px;
             line-height: 28px;
             text-align: center;
-            display: inline-block;
+            transition: all 1s;
             a{
                 color: #ffffff75;
+                transition: all 1s;
+
+            }
+            &:hover{
+                width: 60px;
+                height: 35px;
+                line-height: 35px;
+                background-color: #cc0000;
+                a{
+                    text-decoration: none;
+                    color:#fff;
+                    font-size: 18px;
+                }
             }
         }
         .The_second_screen_three{
@@ -145,20 +146,21 @@ body{
                 position: absolute;
                 left: 150px;
                 top: 150px;
-                height: 800px;
+                height: 900px;
 
             }
             .bj_rw_2{
                 position: absolute;
                 left: 0;
-                top: 570px;
+                top: 680px;
                 z-index: 2;
             }
             .bj_2{
                 position: absolute;
                 left: 550px;
-                top: 300px;
+                top: 420px;
                 z-index: 2;
+                transition: all 1s;
             }
             .second_content{
                 position: absolute;
@@ -170,7 +172,6 @@ body{
                 z-index: 1;
                 header{
                     font-family: "Agency FB";
-
                     h2{
                         position: relative;
                         top:100px;
@@ -179,6 +180,11 @@ body{
                         font-weight: bold;
                         height: 145px;
                         color: #f3f3f3;
+                    }
+                    .bj_3{
+                        position: absolute;
+                        right: 50px;
+                        top: 50px;
                     }
                     h3{
                         position: relative;
@@ -200,6 +206,259 @@ body{
                     }
                 }
             }
+        }
+        article{
+            position:absolute;
+            top: 1300px;
+            left: 200px;
+            z-index: 20;
+            h1{img{}}
+            p{
+                color:#fff;
+                letter-spacing: 4px;
+                position: absolute;
+            }
+            .p_one{
+                top: 200px;
+                left: 20px;
+            }
+            .p_two{
+                top: 300px;
+                left: 20px;
+                font-size: 40px;
+                font-weight: 100;
+            }
+            .p_three{
+                top: 400px;
+                left: 80px;
+                font-size: 18px;
+            }
+            .p_four{
+                top: 430px;
+                left: 80px;
+                font-size: 18px;
+
+            }
+        }
+    }
+    // 第三屏
+    .The_third_screen{
+        .third_screen_1{
+            position: relative;
+            width: 100%;
+            height: 750px;
+            background:url("../../img/index_page/bj2.jpg") center no-repeat ;
+            .third_screen_1_fj1{
+                position: absolute;
+                left: -200px;
+                top: 45%;
+            }
+            .the_one{
+                position: absolute;
+                top: 20%;
+                left: 130px;
+                overflow: hidden;
+                height: 550px;
+                width: 550px;
+                img{
+                    height: 500px;
+                }
+                .the_link{
+                    position: absolute;
+                    bottom: -80px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    display: inline-block;
+                    width: 250px;
+                    height: 80px;
+                    line-height: 80px;
+                    text-align: center;
+                    background-color: #cc0000;
+                    opacity: 0;
+                    transition: all 1s;
+                    a{
+                        font-size: 20px;
+                        color:#fff;
+                        &:hover{
+                            text-decoration: none;
+                        }
+                    }
+                }
+                &:hover{
+                    .the_link{
+                        bottom: 10px;
+                        opacity: 1;
+                    }
+                }
+            }
+            .the_two{
+                position: absolute;
+                top: 20%;
+                left: 700px;
+                overflow: hidden;
+                height: 550px;
+                width: 550px;
+                img{
+                    height: 500px;
+                }
+                .the_link{
+                    position: absolute;
+                    bottom: -80px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    display: inline-block;
+                    width: 250px;
+                    height: 80px;
+                    line-height: 80px;
+                    text-align: center;
+                    background-color: #cc0000;
+                    opacity: 0;
+                    transition: all 1s;
+                    a{
+                        font-size: 20px;
+                        color:#fff;
+                        &:hover{
+                            text-decoration: none;
+                        }
+                    }
+                }
+                &:hover{
+                    .the_link{
+                        bottom: 10px;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    // 第四屏
+    .Small_video{
+        position: relative;
+        width: 100%;
+        height: 300px;
+        border-top:10px solid #000 ;
+        border-bottom:10px solid #000 ;
+        img{
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%);
+        }
+        p{
+            position: absolute;
+            left: 50%;
+            top: 60%;
+            transform: translate(-50%);
+            letter-spacing: 5px;
+            font-size: 20px;
+            color:#fff;
+            font-weight: 100;
+        }
+
+    }
+    //第五屏
+    .news{
+        position: relative;
+        width: 100%;
+        height: 550px;
+        background-color: #fff;
+        z-index: 10;
+        .content{
+            position: absolute;
+            left: 50%;
+            top: -100px;
+            transform: translateX(-50%);
+            width: 1000px;
+            height: 700px;
+            background-color: #fff;
+            z-index: 15;
+            .title{
+                font-size: 60px;
+                font-weight: 600;
+                color:#333333;
+                padding: 80px 0 0 100px;
+            }
+            .subhead{
+                display: inline-block;
+                width: 600px;
+                letter-spacing: 5px;
+                font-size: 20px;
+                font-weight: 100;
+                margin: 50px 0 0 100px;
+                padding-bottom: 20px;
+                border-bottom: 1px dotted  ;
+            }
+            .news_1{
+                position: absolute;
+                left: 100px;
+                top: 210px;
+                width: 400px;
+                overflow: hidden;
+                img{
+                    width: 500px;
+                }
+            }
+            .news_2{
+                position: absolute;
+                left: 500px;
+                top: 210px;
+                width: 400px;
+                overflow: hidden;
+                img{
+                    width: 500px;
+                }
+            }
+            .information{
+                position: absolute;
+                bottom: 100px;
+                left: 100px;
+                font-size: 15px;
+                .information_item{
+                    float: left;
+                    margin: 30px;
+                    letter-spacing: 2px;
+                    ul{
+                        width: 360px;
+                        li{
+                            padding-bottom: 15px;
+                            a{
+                                &:hover{
+                                    text-decoration: none;
+                                    color:#000;
+                                    letter-spacing: 5px;
+                                }
+                                transition: all 1s;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    // 页脚
+    .footer{
+        width: 100%;
+        height: 521px;
+        background-image: url("../../img/index_page/fontbj.jpg");
+        background-repeat: no-repeat;
+        text-align: center;
+        color:#fff;
+        padding-top: 150px;
+        box-sizing: border-box;
+        img{}
+        .word{
+            font-size: 16px;
+            padding: 10px 0;
+        }
+        .uav{
+            font-size: 25px;
+            padding: 10px 0 50px;
+        }
+        .copy{
+            color:#828282;
+            padding-top: 30px;
         }
     }
 }
