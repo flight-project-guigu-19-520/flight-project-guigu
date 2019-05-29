@@ -103,7 +103,7 @@
 .homePage_wrap .The_second_screen {
   position: relative;
   width: 100%;
-  height: 2000px;
+  height: 1200px;
   background-color: black;
   overflow: hidden;
 }
@@ -201,37 +201,6 @@
   text-indent: 2rem;
   line-height: 28px;
   letter-spacing: 3px;
-}
-.homePage_wrap .The_second_screen article {
-  position: absolute;
-  top: 1300px;
-  left: 200px;
-  z-index: 20;
-}
-.homePage_wrap .The_second_screen article p {
-  color: #fff;
-  letter-spacing: 4px;
-  position: absolute;
-}
-.homePage_wrap .The_second_screen article .p_one {
-  top: 200px;
-  left: 20px;
-}
-.homePage_wrap .The_second_screen article .p_two {
-  top: 300px;
-  left: 20px;
-  font-size: 40px;
-  font-weight: 100;
-}
-.homePage_wrap .The_second_screen article .p_three {
-  top: 400px;
-  left: 80px;
-  font-size: 18px;
-}
-.homePage_wrap .The_second_screen article .p_four {
-  top: 430px;
-  left: 80px;
-  font-size: 18px;
 }
 .homePage_wrap .The_third_screen .third_screen_1 {
   position: relative;
@@ -349,7 +318,7 @@
 .homePage_wrap .news .content {
   position: absolute;
   left: 50%;
-  top: -100px;
+  top: -70px;
   transform: translateX(-50%);
   width: 1000px;
   height: 700px;
@@ -436,6 +405,7 @@
   padding: 10px 0 50px;
 }
 .homePage_wrap .footer .copy {
+  font-size: 12px;
   color: #828282;
   padding-top: 30px;
 }
