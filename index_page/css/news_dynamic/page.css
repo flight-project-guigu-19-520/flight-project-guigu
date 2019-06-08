@@ -1,0 +1,122 @@
+#wrap {
+  width: 100%;
+  background-color: #000000;
+  overflow: hidden;
+  /*头部CSS样式*/
+  /*图片css*/
+  /*内容CSS样式*/
+}
+#wrap .nd_index {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+#wrap .nd_index img {
+  width: 100%;
+}
+#wrap .contentWrap {
+  width: 100%;
+  height: auto;
+}
+#wrap .contentWrap .contentTop {
+  width: 100%;
+  height: 980px;
+  text-align: center;
+  position: relative;
+  padding-top: 20%;
+  color: #ffffff;
+  letter-spacing: 4px;
+}
+#wrap .contentWrap .contentTop h1 {
+  font-size: 48px;
+  height: 72px;
+  line-height: 72px;
+  font-weight: 100;
+}
+#wrap .contentWrap .contentTop h2 {
+  font-size: 30px;
+  height: 80px;
+  line-height: 80px;
+  font-weight: 100;
+}
+#wrap .contentWrap .contentTop p {
+  font-size: 12px;
+}
+#wrap .contentWrap .contentMid {
+  width: 100%;
+  padding: 5%;
+  height: auto;
+  position: relative;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+#wrap .contentWrap .contentMid .oneWrap {
+  text-align: center;
+  background-color: #fff;
+}
+#wrap .contentWrap .contentMid .oneWrap .oneTop {
+  width: 100%;
+}
+#wrap .contentWrap .contentMid .oneWrap .oneTop .oneTop_P {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 40px;
+  color: #1e1e1e;
+  font-family: 微软雅黑;
+  letter-spacing: 3px;
+}
+#wrap .contentWrap .contentMid .oneWrap .oneDate {
+  margin-top: 20px;
+  width: 100%;
+  overflow: hidden;
+  color: #969696;
+}
+#wrap .contentWrap .contentMid .oneWrap .oneDate .oneDate_time {
+  float: left;
+}
+#wrap .contentWrap .contentMid .oneWrap .oneDate .oneDate_icon {
+  float: right;
+}
+#wrap .contentWrap .contentMid .oneWrap .oneDate .oneDate_icon::before {
+  content: '\e69e';
+}
+#wrap .contentWrap .contentMid .oneWrap .oneContent {
+  border: 1px solid #ddd;
+  border-left: none;
+  border-right: none;
+  text-align: left;
+  initial-letter: 2;
+  font-size: 14px;
+  line-height: 28px;
+  color: #707070;
+  letter-spacing: 1px;
+  font-family: 微软正黑体;
+  padding: 30px 0 30px;
+  text-indent: 2em;
+}
+.footer {
+  position: relative;
+  width: 100%;
+  height: 521px;
+  background-image: url("../../img/index_page/fontbj.jpg");
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+  padding-top: 150px;
+  box-sizing: border-box;
+}
+.footer .word {
+  font-size: 16px;
+  padding: 10px 0;
+}
+.footer .uav {
+  font-size: 25px;
+  padding: 10px 0 50px;
+}
+.footer .copy {
+  font-size: 12px;
+  color: #828282;
+  padding-top: 30px;
+}

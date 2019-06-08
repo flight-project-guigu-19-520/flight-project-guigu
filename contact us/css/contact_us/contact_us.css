@@ -1,0 +1,138 @@
+body{
+    overflow:Scroll;overflow-x:hidden;
+}
+.warp{
+    height: 100%;
+    width: 100%;
+}
+.warp .header{
+    position: relative;
+    height: 705px;
+    width: 100%;
+    background: url("../../img/contact_us/index.jpg") center center no-repeat;
+    background-size: 1920px 705px;
+}
+.warp .header .word{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -26px;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+h1{
+    text-align: center;
+    font-size: 48px;
+    line-height: 1.5;
+}
+.word1{
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 100;
+    font-family: 微软雅黑；
+}
+.wordP{
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.8;
+    font-family: 微软雅黑;
+}
+.content{
+    position: relative;
+    width: 100%;
+    height: 690px;
+}
+#allmap{
+    margin-right: 35px;
+    float: left;
+    height: 685px;
+    width: 50%;
+}
+.content .form{
+    float: left;
+    width: 45%;
+}
+.content .contentWord{
+    padding-top: 140px;
+    font-size: 36px;
+    font-weight: bolder;
+    line-height: 1;
+}
+h3{
+    font-size: 16px;
+    padding: 4% 100px 3% 0;
+    width: 80%;
+    font-weight: 100;
+    border-bottom: 1px dotted #555;
+    color: #000;
+}
+.contentP{
+    font-size: 12px;
+    color: #000;
+    line-height: 30px
+}
+.form .name{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    width: 300px;
+    height: 25px;
+    padding-left: 10px;
+
+}
+.nameP{
+    font-size: 14px;
+    font-family: 'Microsoft YaHei';
+    height: 25px;
+}
+.form .tell{
+    margin-bottom: 5px;
+    width: 300px;
+    height: 25px;
+    padding-left: 10px;
+}
+.telP{
+    font-size: 14px;
+    font-family: 'Microsoft YaHei';
+    height: 25px;
+}
+
+.form .text{
+    margin-bottom: 5px;
+    display: block;
+    width: 302px;
+    height: 100px;
+    padding-left: 10px;
+}
+
+.form .submit{
+    width: 314px;
+    height: 25px;
+    border: none;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.footer {
+    width: 100%;
+    height: 521px;
+    background-image: url("../../img/contact_us/db.jpg");
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+    padding-top: 150px;
+    box-sizing: border-box;
+}
+.footer .word {
+    font-size: 16px;
+    padding: 10px 0;
+}
+.footer .uav {
+    font-size: 25px;
+    padding: 10px 0 50px;
+}
+.footer .copy {
+    font-size: 12px;
+    color: #828282;
+    padding-top: 30px;
+}

@@ -2,142 +2,275 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>新闻动态</title>
-    <link rel="stylesheet" href="css/news_dynamic/reset.css">
-    <link rel="stylesheet" href="css/news_dynamic/index.css">
+    <title>Home page</title>
+    <link rel="stylesheet" href="index_page/css/navigation/reset.css">
+    <link rel="stylesheet" href="index_page/css/navigation/navigation.css">
+    <link rel="stylesheet" href="index_page/css/index_page/index_page.css">
+    <link rel="stylesheet" href="index_page/css/index_page/index_style.css">
+
+    <!--lunbo-->
+    <link rel="stylesheet" type="text/css" href="index_page/css/index_page/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="index_page/css/index_page/demo.css">
+    <link rel="stylesheet" href="index_page/css/index_page/style.css">
 </head>
 <body>
-<div id="wrap">
-    <header class="header">
+    <!--导航页面-->
+    <div class="nav-wrap">
+        <div class="nav_background"></div>
+        <h1 class="logo">
+            <img src="index_page/img/navigation/logo.png" alt="">
+        </h1>
+        <div class="key">
+            <div class="key_ago">一MENU</div>
+            <span class="key_later key_later_top"></span>
+            <span class="key_later key_later_bottom"></span>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="./index.html" class="item-anchor" target="_blank">网站首页</a>
+            </li>
+            <li class="nav-item">
+                <a href="./about%20Us/about%20Us.html" class="item-anchor" target="_blank">关于大正</a>
+            </li>
+            <li class="nav-item">
+                <a href="new_product/new_product.html" class="item-anchor" target="_blank">最新产品</a>
+            </li>
+            <li class="nav-item">
+                <a href="./news_dynamic/news_dynamic.html" class="item-anchor" target="_blank">新闻动态</a>
+            </li>
+            <li class="nav-item">
+                <a href="./safety_flight/SafeFlight.html" class="item-anchor" target="_blank">安全飞行</a>
+            </li>
+            <li class="nav-item">
+                <a href="./contact%20us/contact_us.html" class="item-anchor" target="_blank">联系我们</a>
+            </li>
+        </ul>
 
-    </header>
-    <div class="contentWrap">
-        <div class="contentTop">
-            <img src="img/news_dynamic/index.jpg" alt="">
-            <div class="wordWrap">
-                <h1>LATEST NEWS</h1>
-                <h2>最新动态</h2>
-                <p>全面提升拍摄乐趣</p>
+    </div>
+    <script src="index_page/js/navigation/navigation.js"></script>
+    <script>
+        <!--导航页面js调用-->
+        navigation();
+    </script>
+    <!--首页-->
+
+    <div class="homePage_wrap">
+        <!--第一屏-->
+        <header class="homePage_header">
+            <ul class="scene">
+                <li class="layer headerImg_w1" data-depth="0.2"><img src="index_page/img/index_page/wz4.png"></li>
+                <li class="layer headerImg_w2" data-depth="0.1"><span>轻松出发 去瞰世界</span></li>
+                <li class="layer headerImg_f" data-depth="0.50"><img src="index_page/img/index_page/big.png"></li>
+                <li class="layer headerImg_w3" data-depth="0.1"><span>PROFESSIONAL QUALITY</span></li>
+                <li class="layer headerImg_w4" data-depth="0.1"><span>FLYING TELESCOPES</span></li>
+            </ul>
+            <div class="masking"></div>
+        </header>
+        <!--第二屏-->
+        <div class="The_second_screen">
+            <!--<div class="imaginary_line"></div>-->
+            <div class="link_particulars"><a href="./product_description/product%20description%20.html" target="_blank">MORE</a></div>
+            <div class="The_second_screen_three">
+                <img class="bj_1" src="index_page/img/index_page/bj.jpg" alt="">
+                <img class="bj_rw_2" src="index_page/img/index_page/rw1.png" alt="">
+                <img class="bj_2" src="index_page/img/index_page/fj1.png" alt="">
+                <div class="second_content">
+                    <header>
+                        <h2>ABOUT US</h2>
+                        <div class="bj_3">
+                            <img src="index_page/img/index_page/about3.png" alt="">
+                        </div>
+                        <h3>心无界·自飞翔</h3>
+                        <p>
+                            一家专门从事专用涡喷发动机、固定翼无人机、无人直升机、远距信息传输系统、特种机载设备、飞控指挥车和无人载人气垫船、车辆自动预热系统等研发、生产和销售的高新技术企业。
+                            <br>
+                            公司针对不同客户需求，研制出专项专用机型，包括高速公路巡查机、城市应急反恐应用机型、航拍无人机（旅游、电影、电视、体育、赛事、展会）、农林植保机、遥感遥测专用无人机、学员培训专用无人机等系列产品。
+                        </p>
+                    </header>
+                </div>
             </div>
         </div>
 
-        <div class="contentMid">
-            <ul class="contentList">
-                <li class="contentItem">
-                    <div class="itemWrap">
-                            <div class="itemImg">
-                                <a href="##">
-                                    <img src="img/news_dynamic/index1.jpg" alt="">
-                                    <span class="itemImgMask"></span>
-                                </a>
 
-                            </div>
-                            <div class="itemFoot">
-                                <div class="itemFootWrap">
-                                    <a href="##">
-                                        <span class="itemFoot_Date">2019.05.20</span>
-                                        <span class="itemFoot_title">·便携侦查无人机搭载多种任务设备进行高空作业</span>
-                                        <p class="itemFoot_P">
-                                            我司自主研发生产的工业级无人机系统，采用全封闭、一体化设计。机体使用碳纤维材料，在保证刚度、强度的同时，更加轻巧美观。机臂采用伞式折叠设计，组装、运输更快速便捷。该产品搭载了我司自主研发的多旋翼飞控系统，先进的算法保证了飞行平台的稳定安全，并且可搭载多种任务设备进行高空作业。 系统特性指标参数※工业级高可靠设计轴距850mm※可收放起落架空载起飞重量6kg※免工具插拔快拆结构，方便携带运输最大起飞重量10kg※防雨设计，可雨中飞行最大负载重量2kg※卓越的动力冗余，适应高海拔作业最大飞行时间35min※碳纤维一体化成型机身，刚性好，重量轻最大飞行速度25m/s※抗风能力6级以内，工作海拔 5000m最大控制半径10km
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
+        <!--轮播图-->
+
+
+
+        <div class="slider" id="slider" style="--img-prev:url(index_page/img/index_page/KmxMPI5wQfuib_gujluBpw.jpg)">
+            <div class="slider__content" id="slider-content">
+                <div class="slider__images">
+                    <div class="slider__images-item slider__images-item--active" data-id="1"><img src="index_page/img/index_page/KmxMPI5wQfuib_gujluBpw.jpg"></div>
+                    <div class="slider__images-item" data-id="2"><img src="index_page/img/index_page/MJb3jo_nT86n6ZIeaY9o0w.jpg"></div>
+                    <div class="slider__images-item" data-id="3"><img src="index_page/img/index_page/pXtStHSGR_26rHBf-zio4A.jpg"></div>
+                    <div class="slider__images-item" data-id="4"><img src="index_page/img/index_page/KmxMPI5wQfuib_gujluBpw.jpg"></div>
+                    <div class="slider__images-item" data-id="5"><img src="index_page/img/index_page/MJb3jo_nT86n6ZIeaY9o0w.jpg"></div>
+                </div>
+                <div class="slider__text">
+                    <div class="slider__text-item slider__text-item--active" data-id="1">
+                        <div class="slider__text-item-head">
+                            <h3>Aircraft</h3>
+                        </div>
+                        <div class="slider__text-item-info">
+                            <p>-NEVER SEEN A SINGLE EYE WITH WISDOM-</p>
+                        </div>
                     </div>
-
-                </li>
-                <li class="contentItem">
-                    <div class="itemWrap">
-                            <div class="itemImg">
-                                <a href="##">
-                                    <img src="img/news_dynamic/index1.jpg" alt="">
-                                    <span class="itemImgMask"></span>
-                                </a>
-
-
-                            </div>
-                            <div class="itemFoot">
-                                <div class="itemFootWrap">
-                                    <a href="##">
-                                        <span class="itemFoot_Date">2019.05.20</span>
-                                        <span class="itemFoot_title">·便携侦查无人机搭载多种任务设备进行高空作业</span>
-                                        <p class="itemFoot_P">
-                                            我司自主研发生产的工业级无人机系统，采用全封闭、一体化设计。机体使用碳纤维材料，在保证刚度、强度的同时，更加轻巧美观。机臂采用伞式折叠设计，组装、运输更快速便捷。该产品搭载了我司自主研发的多旋翼飞控系统，先进的算法保证了飞行平台的稳定安全，并且可搭载多种任务设备进行高空作业。 系统特性指标参数※工业级高可靠设计轴距850mm※可收放起落架空载起飞重量6kg※免工具插拔快拆结构，方便携带运输最大起飞重量10kg※防雨设计，可雨中飞行最大负载重量2kg※卓越的动力冗余，适应高海拔作业最大飞行时间35min※碳纤维一体化成型机身，刚性好，重量轻最大飞行速度25m/s※抗风能力6级以内，工作海拔 5000m最大控制半径10km
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
+                    <div class="slider__text-item" data-id="2">
+                        <div class="slider__text-item-head">
+                            <h3>Aircraft</h3>
+                        </div>
+                        <div class="slider__text-item-info">
+                            <p>发现全新的飞行世界</p>
+                        </div>
                     </div>
-
-                </li>
-                <li class="contentItem">
-                    <div class="itemWrap">
-                            <div class="itemImg">
-                                <a href="##">
-                                    <img src="img/news_dynamic/index1.jpg" alt="">
-                                    <span class="itemImgMask"></span>
-                                </a>
-
-
-                            </div>
-                            <div class="itemFoot">
-                                <div class="itemFootWrap">
-                                    <a href="##">
-                                        <span class="itemFoot_Date">2019.05.20</span>
-                                        <span class="itemFoot_title">·便携侦查无人机搭载多种任务设备进行高空作业</span>
-                                        <p class="itemFoot_P">
-                                            我司自主研发生产的工业级无人机系统，采用全封闭、一体化设计。机体使用碳纤维材料，在保证刚度、强度的同时，更加轻巧美观。机臂采用伞式折叠设计，组装、运输更快速便捷。该产品搭载了我司自主研发的多旋翼飞控系统，先进的算法保证了飞行平台的稳定安全，并且可搭载多种任务设备进行高空作业。 系统特性指标参数※工业级高可靠设计轴距850mm※可收放起落架空载起飞重量6kg※免工具插拔快拆结构，方便携带运输最大起飞重量10kg※防雨设计，可雨中飞行最大负载重量2kg※卓越的动力冗余，适应高海拔作业最大飞行时间35min※碳纤维一体化成型机身，刚性好，重量轻最大飞行速度25m/s※抗风能力6级以内，工作海拔 5000m最大控制半径10km
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
+                    <div class="slider__text-item" data-id="3">
+                        <div class="slider__text-item-head">
+                            <h3>Aircraft</h3>
+                        </div>
+                        <div class="slider__text-item-info">
+                            <p>生活不止眼前的坐井观天</p>
+                        </div>
                     </div>
-
-                </li>
-                <li class="contentItem">
-                    <div class="itemWrap">
-                            <div class="itemImg">
-                                <a href="##">
-                                    <img src="img/news_dynamic/index1.jpg" alt="">
-                                    <span class="itemImgMask"></span>
-                                </a>
-
-
-                            </div>
-                            <div class="itemFoot">
-                                <div class="itemFootWrap">
-                                    <a href="##">
-                                        <span class="itemFoot_Date">2019.05.20</span>
-                                        <span class="itemFoot_title">·便携侦查无人机搭载多种任务设备进行高空作业</span>
-                                        <p class="itemFoot_P">
-                                            我司自主研发生产的工业级无人机系统，采用全封闭、一体化设计。机体使用碳纤维材料，在保证刚度、强度的同时，更加轻巧美观。机臂采用伞式折叠设计，组装、运输更快速便捷。该产品搭载了我司自主研发的多旋翼飞控系统，先进的算法保证了飞行平台的稳定安全，并且可搭载多种任务设备进行高空作业。 系统特性指标参数※工业级高可靠设计轴距850mm※可收放起落架空载起飞重量6kg※免工具插拔快拆结构，方便携带运输最大起飞重量10kg※防雨设计，可雨中飞行最大负载重量2kg※卓越的动力冗余，适应高海拔作业最大飞行时间35min※碳纤维一体化成型机身，刚性好，重量轻最大飞行速度25m/s※抗风能力6级以内，工作海拔 5000m最大控制半径10km
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
+                    <div class="slider__text-item" data-id="4">
+                        <div class="slider__text-item-head">
+                            <h3>Aircraft</h3>
+                        </div>
+                        <div class="slider__text-item-info">
+                            <p>还要去探索远方的地平线</p>
+                        </div>
                     </div>
-
-                </li>
-            </ul>
-
+                    <div class="slider__text-item" data-id="5">
+                        <div class="slider__text-item-head">
+                            <h3>Aircraft</h3>
+                        </div>
+                        <div class="slider__text-item-info">
+                            <p>发现全新的飞行世界</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__nav">
+                <div class="slider__nav-arrows">
+                    <div class="slider__nav-arrow slider__nav-arrow--left" id="left">to left</div>
+                    <div class="slider__nav-arrow slider__nav-arrow--right" id="right">to right</div>
+                </div>
+                <div class="slider__nav-dots" id="slider-dots">
+                    <div class="slider__nav-dot slider__nav-dot--active" data-id="1"></div>
+                    <div class="slider__nav-dot" data-id="2"></div>
+                    <div class="slider__nav-dot" data-id="3"></div>
+                    <div class="slider__nav-dot" data-id="4"></div>
+                    <div class="slider__nav-dot" data-id="5"></div>
+                </div>
+            </div>
         </div>
 
+        <!--<div style="text-align:center;clear:both">-->
+            <!--<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>-->
+            <!--<script src="/follow.js" type="text/javascript"></script>-->
+        <!--</div>-->
+        <script src="index_page/js/index_page/index.js"></script>
+
+
+
+
+        <!--第三屏-->
+        <div class="The_third_screen">
+            <div class="third_screen_1">
+                <img class="third_screen_1_fj1" src="index_page/img/index_page/fj2.png" alt="">
+                <div class="the_one">
+                    <img src="index_page/img/index_page/fj3.jpg" alt="">
+                    <p class="the_link">
+                        <a href="./product_description/product%20description%201.html" target="_blank">-MORE-</a>
+                    </p>
+                </div>
+                <div class="the_two">
+                    <img src="index_page/img/index_page/fj4.jpg" alt="">
+                    <p class="the_link">
+                        <a href="./product_description/product%20description%202.html" target="_blank">-MORE-</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <!--第四屏-->
+        <div class="Small_video">
+            <img src="index_page/img/index_page/wz13.png" alt="">
+            <p>打破黑夜的枷锁</p>
+
+        </div>
+        <!--第五屏-->
+        <div class="news">
+            <div class="content">
+                <p class="title">NEWS</p>
+                <p class="subhead">精彩瞬间</p>
+                <a class="news_1" href="./news_dynamic/two_page.html" target="_blank"><img src="index_page/img/index_page/rw_2.jpg" alt=""></a>
+                <a class="news_2" href="./news_dynamic/news_dynamic.html" target="_blank"><img src="index_page/img/index_page/fj5.jpg" alt=""></a>
+
+                <ul class="information">
+                    <li class="information_item information_left">
+                        <ul>
+                            <li><a href="./news_dynamic/six_page.html" target="_blank">植保无人机喷药和传统配药技术的区别</a></li>
+                            <li><a href="./news_dynamic/three_page.html" target="_blank">有哪些技术会影响无人机的精准导航定位</a></li>
+                            <li><a href="./news_dynamic/four_page.html" target="_blank">无人机任务规划需注意的因素</a></li>
+                            <li><a href="./news_dynamic/five_page.html" target="_blank">三步拥有厘米级城市三维模型</a></li>
+                        </ul>
+                    </li>
+                    <li class="information_item information_right">
+                        <ul>
+                            <li><a href="./new_product/new_product.html" target="_blank">showtime！无人机“烟火秀”</a></li>
+                            <li><a href="./news_dynamic/first_page.html" target="_blank">不忘初心，继续前进！</a></li>
+                            <li><a href="./news_dynamic/five_page.html" target="_blank">科技以人为本</a></li>
+                            <li><a href="./safety_flight/SafeFlight.html" target="_blank">心有翼，梦飞扬</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <!--页脚-->
+        <footer class="footer">
+            <img src="index_page/img/index_page/logo.png" alt="">
+            <p class="word">换个角度看世界</p>
+            <p class="uav">UAV</p>
+            <p class="copy">版权所有：黑龙江省大正赛富投资管理有限公司     网站建设：中企动力哈尔滨黑ICP备案********号</p>
+        </footer>
     </div>
-    <div class="bottomWrap">
-        <div class="bottomTop">
-            <h1 class="bottomTopLogo">
-                <img src="img/news_dynamic/dzlogo11.png" alt="">
-            </h1>
-            <p class="bottomTopWord">换个角度看世界</p>
-            <h2 class="bottomTopTag">UAV</h2>
-        </div>
-        <div class="bottomItlk">
-            <a href="http://www.new.dzsfpe.com/">版权所有：黑龙江省大正赛富投资管理有限公司</a>
-            <a href="https://www.300.cn/?purl=http%3A%2F%2Fwww.new.dzsfpe.com%2Fnav%2F10.html">网站建设：中企动力</a>
-            <a href="https://haerbin.300.cn/">哈尔滨</a>
-            <a href="http://www.miibeian.gov.cn/">黑ICP备案********号</a>
-        </div>
-    </div>
-</div>
+    <script src="index_page/js/index_page/jquery.min.js"></script>
+    <script src="index_page/js/index_page/vmc.slider.full.min.js"></script>
+
+    <script type="text/javascript" src="index_page/js/index_page/vidbg.min.js"></script>
+    <script src="index_page/js/index_page/parallax.js"></script>
+    <script>
+
+        <!--第一屏动画-->
+        var scene = document.querySelector('.scene');
+        var parallax = new Parallax(scene);
+        //背景视频
+        $('.homePage_header').vidbg({
+            'mp4': 'index_page/img/index_page/shipin.mp4',
+            'webm': 'index_page/img/index_page/shipinzhuan.webm',
+        }, {
+            volume: 1,
+            playbackRate: 1,
+            muted: true,
+            loop: true,
+            position: '50% 50%',
+            resizing: true,
+            overlay: true,
+        });
+        $('.Small_video').vidbg({
+            'mp4': 'index_page/img/index_page/intro-bg-v2.mp4',
+            // 'webm': 'img/index_page/shipinzhuan.webm',
+        }, {
+            volume: 1,
+            playbackRate: 1,
+            muted: true,
+            loop: true,
+            position: '50% 50%',
+            resizing: true,
+            overlay: true,
+        });
+
+
+    </script>
 </body>
 </html>

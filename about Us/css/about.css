@@ -1,0 +1,352 @@
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+table,
+span,
+var,
+strong,
+em,
+input,
+select,
+option,
+textarea {
+  margin: 0;
+  padding: 0;
+}
+fieldset,
+img {
+  border: none;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var,
+em,
+strong,
+b,
+i,
+u {
+  font-style: normal;
+  font-weight: normal;
+}
+ul,
+ol {
+  list-style: none;
+}
+input,
+select,
+textarea {
+  outline: 0;
+}
+textarea {
+  resize: none;
+  overflow: auto;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  overflow: hidden;
+  background-color: #000000;
+}
+#wrap {
+  height: 100%;
+  position: relative;
+}
+#wrap .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+#wrap .header .logo {
+  position: fixed;
+  top: 60px;
+  left: 70px;
+}
+#wrap .header .nav {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#wrap .header .nav .menuy {
+  color: #fff;
+  text-align: center;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 80px;
+}
+#wrap .img_ny {
+  background-color: #000;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+#wrap .img_ny img {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+#wrap .content {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+#wrap .content .contentList {
+  position: relative;
+  width: 100%;
+}
+#wrap .content .contentList .con1 {
+  width: 100%;
+  height: 980px;
+  text-align: center;
+  position: relative;
+  padding-top: 19%;
+  letter-spacing: 4px;
+  color: #fff;
+}
+#wrap .content .contentList .con1 h1 {
+  font-size: 48px ;
+}
+#wrap .content .contentList .con1 h2 {
+  font-size: 30px;
+  padding: 20px;
+  font-family: 微软雅黑;
+  font-weight: 100;
+}
+#wrap .content .contentList .con1 p {
+  font-size: 12px;
+}
+#wrap .content .contentList .con2 {
+  width: 100%;
+  height: 770px;
+  background-color: #fff;
+  position: relative;
+  margin-top: 20px;
+}
+#wrap .content .contentList .con2 .con2_left {
+  width: 38%;
+  height: auto;
+  position: relative;
+  float: left;
+  transform: translate3d(-300px, 0, 0);
+  opacity: 0;
+  transition: all 2s ease 0s;
+}
+#wrap .content .contentList .con2 .con2_right {
+  position: relative;
+  width: 40%;
+  height: auto;
+  margin-left: 55%;
+  padding-top: 6%;
+  transform: translate3d(0, 300px, 0);
+  opacity: 0;
+  transition: all 2s ease 0s;
+}
+#wrap .content .contentList .con2 .con2_right h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+#wrap .content .contentList .con2 .con2_right h2 {
+  font-size: 18px;
+  padding: 4%;
+  width: 300px;
+  font-weight: 100;
+  border-bottom: 1px dotted #555;
+}
+#wrap .content .contentList .con2 .con2_right p {
+  line-height: 2;
+  width: 80%;
+  font-size: 14px;
+  text-align: justify;
+  color: #555;
+  padding-top: 4%;
+}
+#wrap .content .contentList .con3 {
+  position: relative;
+  width: 100%;
+  height: 980px;
+  text-align: center;
+  color: #fff;
+  background-image: url("../img/a3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#wrap .content .contentList .con3 h1 {
+  font-size: 48px;
+  padding-top: 13%;
+  transform: translate3d(0, 160px, 0);
+  opacity: 0;
+  transition: all 2s ease 0s;
+}
+#wrap .content .contentList .con3 h2 {
+  font-size: 18px;
+  padding: 1% 0;
+  font-weight: 100;
+  transform: translate3d(0, 160px, 0);
+  opacity: 0;
+  transition: all 2s ease 0s;
+}
+#wrap .content .contentList .con3 ul {
+  padding: 1%;
+}
+#wrap .content .contentList .con3 ul li {
+  padding: 1% 0;
+  font-size: 16px;
+  transform: translate3d(0, 160px, 0);
+  opacity: 0;
+  transition: all 2s ease 0s;
+}
+#wrap .content .contentList .con4 {
+  width: 100%;
+  height: 980px;
+  background-image: url("../img/a4.jpg");
+  color: #000;
+  position: relative;
+}
+#wrap .content .contentList .con4 h1 {
+  font-size: 48px;
+  padding: 5% 9% 1%;
+  transform: translate3d(-300px, 0, 0);
+  opacity: 0;
+  transition: all 2s ease 0s;
+}
+#wrap .content .contentList .con4 h2 {
+  font-weight: 100;
+  font-size: 18px;
+  padding: 0 9%;
+  transform: translate3d(-300px, 0, 0);
+  opacity: 0;
+  transition: all 1s ease 0s;
+}
+#wrap .content .contentList .con4 .con4_left {
+  width: 48%;
+  float: left;
+  margin: 2% 1% 0 1%;
+  overflow: hidden;
+  transform: translate3d(0, 800px, 0);
+  opacity: 0;
+  transition: all 2s ease 0s;
+}
+#wrap .content .contentList .con4 .con4_left:hover div {
+  width: 100%;
+}
+#wrap .content .contentList .con4 .con4_left img {
+  width: 100%;
+}
+#wrap .content .contentList .con4 .con4_left .masking1 {
+  width: 0;
+  height: 99%;
+  transition: all 1s;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#wrap .content .contentList .con4 .con4_right {
+  width: 48%;
+  float: left;
+  margin: 2% 1% 0 1%;
+  overflow: hidden;
+  transform: translate3d(0, 800px, 0);
+  opacity: 0;
+  transition: all 2s ease 0s;
+}
+#wrap .content .contentList .con4 .con4_right:hover div {
+  width: 100%;
+}
+#wrap .content .contentList .con4 .con4_right img {
+  width: 100%;
+}
+#wrap .content .contentList .con4 .con4_right .masking2 {
+  width: 0;
+  height: 99%;
+  transition: all 1s;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#wrap .content .contentList .con5 {
+  width: 100%;
+  height: 520px;
+  text-align: center;
+  position: relative;
+  background-image: url("../img/a7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#wrap .content .contentList .con5 .con5_logo {
+  text-align: center;
+}
+#wrap .content .contentList .con5 .con5_logo h1 {
+  display: block;
+  margin: 0 auto;
+  padding-top: 8%;
+}
+#wrap .content .contentList .con5 .con5_logo h1 img {
+  width: 83px;
+  height: 55px;
+}
+#wrap .content .contentList .con5 .con5_logo p {
+  font-size: 16px;
+  font-weight: 100;
+  color: #fcfcfc;
+  letter-spacing: 3px;
+  padding: 15px 0 15px 0;
+}
+#wrap .content .contentList .con5 .con5_logo h2 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #fcfcfc;
+  letter-spacing: 3px;
+}
+#wrap .content .contentList .con5 p {
+  font-size: 13px;
+  font-weight: 100;
+  color: #fcfcfc;
+  padding-top: 8%;
+}
+#wrap .scroll {
+  width: 6px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #000;
+}
+#wrap .scroll .Bar {
+  height: 100px;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 6px;
+  border-radius: 3px;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cont ent-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title>contact_us</title>
+    <link rel="stylesheet" href="css/contact_us/reset.css">
+    <link rel="stylesheet" href="css/contact_us/contact_us.css">
+    <link rel="stylesheet" href="css/navigation/navigation.css">
+
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=9te7y1HBj4QIiUuCGKfqmY8wH5I6cSBY"></script>
+</head>
+<body>
+    <div class="warp">
+        <!--导航页面-->
+        <div class="nav-wrap">
+            <div class="nav_background"></div>
+            <h1 class="logo">
+                <img src="img/contact_us/dzlogo11.png" alt="">
+            </h1>
+            <div class="key">
+                <div class="key_ago">一MENU</div>
+                <span class="key_later key_later_top"></span>
+                <span class="key_later key_later_bottom"></span>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="../index.html" class="item-anchor" target="_blank">网站首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../about%20Us/about%20Us.html" class="item-anchor" target="_blank">关于大正</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../new_product/new_product.html" class="item-anchor" target="_blank">最新产品</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../news_dynamic/news_dynamic.html" class="item-anchor" target="_blank">新闻动态</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../safety_flight/SafeFlight.html" class="item-anchor" target="_blank">安全飞行</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../contact%20us/contact_us.html" class="item-anchor" target="_blank">联系我们</a>
+                </li>
+            </ul>
+
+        </div>
+        <script src="js/navigation/navigation.js"></script>
+        <script>
+            <!--导航页面js调用-->
+            navigation();
+        </script>
+        <div class="header">
+            <div class="word">
+                <h1>CONTACT US</h1>
+                <h2 class="word1">联系我们</h2>
+                <p class="wordP">多种全面保障，安心护航</p>
+            </div>
+        </div>
+        <div class="content">
+            <div id="allmap"></div>
+            <div class="form">
+                <h2 class="contentWord">
+                    PLEASE DO NOT HESITATE TO <br>
+                    CONTACT US
+                </h2>
+                <h3 class="contentWord2">如果您有任何意见或建议，请及时联系我们！</h3>
+                <p class="contentP">
+                    公司地址：深圳市宝安区硅谷大厦B区309 <br>
+                    联系电话：<a href="tel:0451-XXXXXXX">0XXX-XXXXXXX</a> <br>
+                    公司邮箱：<a href="mailto:atguigu@163.com">atguigu@163.com</a> <br>
+                </p>
+                <form action="../index.html" method="post">
+                    <input type="text" name="username" placeholder="请输入姓名" class="name"><br>
+                    <p class="nameP"></p>
+                    <input type="tel" name="tel"  placeholder="请输入手机号" class="tell"><br>
+                    <p class="telP"></p>
+                    <textarea  id="" name="" maxlength="1000" placeholder="请输入留言内容" class="text"></textarea>
+                    <button type="submit" class="submit">提交</button>
+                </form>
+
+            </div>
+        </div>
+        <footer class="footer">
+            <img src="img/contact_us/dzlogo11.png" alt="">
+            <p class="word">换个角度看世界</p>
+            <p class="uav">UAV</p>
+            <p class="copy">版权所有：黑龙江省大正赛富投资管理有限公司     网站建设：中企动力哈尔滨黑ICP备案********号</p>
+        </footer>
+    </div>
+</body>
+    <script type="text/javascript">
+        // 百度地图API功能
+        var map = new BMap.Map("allmap");    // 创建Map实例
+        map.centerAndZoom(new BMap.Point(113.844031, 22.63173), 20);  // 初始化地图,设置中心点坐标和地图级别
+        //添加地图类型控件
+        map.addControl(new BMap.MapTypeControl({
+            mapTypes:[
+                BMAP_NORMAL_MAP,
+                BMAP_HYBRID_MAP
+            ]}));
+        map.setCurrentCity("深圳");          // 设置地图显示的城市 此项是必须设置的
+        map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+
+
+        //表单验证
+
+        var oForm=document.querySelector("form");
+        var oUser=document.querySelector("input[name=username]");
+        var oTel=document.querySelector("input[name=tel]");
+        var nameP=document.querySelector('.nameP');
+        var telP=document.querySelector('.telP');
+
+
+        oForm.onsubmit=function () {
+            var regUser=/^[\u4E00-\u9FA5]{2,4}$|^[a-zA-Z]{1,15}$/;
+            var regTel=/^1[345678]\d{9}$/;
+            if (!regUser.test(oUser.value)){
+                nameP.style.color="red";
+                nameP.innerHTML="输入错误，请重新输入2到4位中文或15位英文！";
+                return false;
+            }else{
+                nameP.style.color="green";
+                nameP.innerHTML="输入正确！";
+            }
+
+            if (!regTel.test(oTel.value)){
+                telP.style.color="red";
+                telP.innerHTML="输入错误，请重新输入！";
+                return false;
+            }else{
+                telP.style.color="green";
+                telP.innerHTML="输入正确！";
+            }
+
+        }
+
+    </script>
+</html>
+

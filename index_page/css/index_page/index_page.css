@@ -1,0 +1,411 @@
+.homePage_wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.homePage_wrap .homePage_header {
+  position: relative;
+  width: 100%;
+  height: 750px;
+}
+.homePage_wrap .homePage_header .scene {
+  width: 100%;
+  height: 650px;
+  z-index: 2;
+}
+.homePage_wrap .homePage_header .scene .headerImg_w1 {
+  position: relative;
+  width: 100%;
+  height: 139px;
+}
+.homePage_wrap .homePage_header .scene .headerImg_w1 img {
+  position: absolute;
+  left: 10%;
+  top: 350px;
+  z-index: 1;
+}
+.homePage_wrap .homePage_header .scene .headerImg_w2 {
+  position: relative;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 5px;
+  font-weight: 100;
+  color: #fff;
+}
+.homePage_wrap .homePage_header .scene .headerImg_w2 span {
+  position: absolute;
+  left: 50%;
+  top: 600px;
+  transform: translate(-50%);
+  text-align: center;
+  display: inline-block;
+  width: 195px;
+  height: 20px;
+}
+.homePage_wrap .homePage_header .scene .headerImg_f {
+  position: relative;
+  width: 90%;
+  height: 503px;
+}
+.homePage_wrap .homePage_header .scene .headerImg_f img {
+  position: absolute;
+  left: 18%;
+  top: 150px;
+  z-index: 10;
+}
+.homePage_wrap .homePage_header .scene .headerImg_w3 {
+  position: relative;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 5px;
+  font-weight: 100;
+  color: #888;
+}
+.homePage_wrap .homePage_header .scene .headerImg_w3 span {
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  transform: translate(-50%);
+  display: inline-block;
+  width: 285px;
+  height: 20px;
+}
+.homePage_wrap .homePage_header .scene .headerImg_w4 {
+  position: relative;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 5px;
+  font-weight: 100;
+  color: #888;
+}
+.homePage_wrap .homePage_header .scene .headerImg_w4 span {
+  position: absolute;
+  left: 50%;
+  top: 640px;
+  transform: translate(-50%);
+  display: inline-block;
+  width: 250px;
+  height: 20px;
+}
+.homePage_wrap .homePage_header .masking {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.homePage_wrap .The_second_screen {
+  position: relative;
+  width: 100%;
+  height: 1200px;
+  background-color: black;
+  overflow: hidden;
+}
+.homePage_wrap .The_second_screen .link_particulars {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  font-weight: 100;
+  font-size: 14px;
+  border: 1px dashed #ffffff75;
+  width: 49px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  transition: all 1s;
+}
+.homePage_wrap .The_second_screen .link_particulars a {
+  color: #ffffff75;
+  transition: all 1s;
+}
+.homePage_wrap .The_second_screen .link_particulars:hover {
+  width: 60px;
+  height: 35px;
+  line-height: 35px;
+  background-color: #cc0000;
+}
+.homePage_wrap .The_second_screen .link_particulars:hover a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+.homePage_wrap .The_second_screen .The_second_screen_three {
+  position: relative;
+}
+.homePage_wrap .The_second_screen .The_second_screen_three .bj_1 {
+  position: absolute;
+  left: 150px;
+  top: 150px;
+  height: 900px;
+}
+.homePage_wrap .The_second_screen .The_second_screen_three .bj_rw_2 {
+  position: absolute;
+  left: 0;
+  top: 680px;
+  z-index: 2;
+}
+.homePage_wrap .The_second_screen .The_second_screen_three .bj_2 {
+  position: absolute;
+  left: 550px;
+  top: 420px;
+  z-index: 2;
+  transition: all 1s;
+}
+.homePage_wrap .The_second_screen .The_second_screen_three .second_content {
+  position: absolute;
+  top: 280px;
+  left: 150px;
+  width: 800px;
+  height: 550px;
+  background-color: #fff;
+  z-index: 1;
+}
+.homePage_wrap .The_second_screen .The_second_screen_three .second_content header {
+  font-family: "Agency FB";
+}
+.homePage_wrap .The_second_screen .The_second_screen_three .second_content header h2 {
+  position: relative;
+  top: 100px;
+  left: 0;
+  font-size: 180px;
+  font-weight: bold;
+  height: 145px;
+  color: #f3f3f3;
+}
+.homePage_wrap .The_second_screen .The_second_screen_three .second_content header .bj_3 {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+}
+.homePage_wrap .The_second_screen .The_second_screen_three .second_content header h3 {
+  position: relative;
+  top: 80px;
+  left: 100px;
+  font-size: 40px;
+  font-weight: 100;
+}
+.homePage_wrap .The_second_screen .The_second_screen_three .second_content header p {
+  position: absolute;
+  left: 100px;
+  top: 270px;
+  display: inline-block;
+  width: 600px;
+  font-size: 16px;
+  text-indent: 2rem;
+  line-height: 28px;
+  letter-spacing: 3px;
+}
+.homePage_wrap .The_third_screen .third_screen_1 {
+  position: relative;
+  width: 100%;
+  height: 750px;
+  background: url("../../img/index_page/bj2.jpg") center no-repeat;
+}
+.homePage_wrap .The_third_screen .third_screen_1 .third_screen_1_fj1 {
+  position: absolute;
+  left: -200px;
+  top: 45%;
+}
+.homePage_wrap .The_third_screen .third_screen_1 .the_one {
+  position: absolute;
+  top: 20%;
+  left: 130px;
+  overflow: hidden;
+  height: 550px;
+  width: 550px;
+}
+.homePage_wrap .The_third_screen .third_screen_1 .the_one img {
+  height: 500px;
+}
+.homePage_wrap .The_third_screen .third_screen_1 .the_one .the_link {
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  width: 250px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background-color: #cc0000;
+  opacity: 0;
+  transition: all 1s;
+}
+.homePage_wrap .The_third_screen .third_screen_1 .the_one .the_link a {
+  font-size: 20px;
+  color: #fff;
+}
+.homePage_wrap .The_third_screen .third_screen_1 .the_one .the_link a:hover {
+  text-decoration: none;
+}
+.homePage_wrap .The_third_screen .third_screen_1 .the_one:hover .the_link {
+  bottom: 10px;
+  opacity: 1;
+}
+.homePage_wrap .The_third_screen .third_screen_1 .the_two {
+  position: absolute;
+  top: 20%;
+  left: 700px;
+  overflow: hidden;
+  height: 550px;
+  width: 550px;
+}
+.homePage_wrap .The_third_screen .third_screen_1 .the_two img {
+  height: 500px;
+}
+.homePage_wrap .The_third_screen .third_screen_1 .the_two .the_link {
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  width: 250px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background-color: #cc0000;
+  opacity: 0;
+  transition: all 1s;
+}
+.homePage_wrap .The_third_screen .third_screen_1 .the_two .the_link a {
+  font-size: 20px;
+  color: #fff;
+}
+.homePage_wrap .The_third_screen .third_screen_1 .the_two .the_link a:hover {
+  text-decoration: none;
+}
+.homePage_wrap .The_third_screen .third_screen_1 .the_two:hover .the_link {
+  bottom: 10px;
+  opacity: 1;
+}
+.homePage_wrap .Small_video {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border-top: 10px solid #000 ;
+  border-bottom: 10px solid #000 ;
+}
+.homePage_wrap .Small_video img {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%);
+}
+.homePage_wrap .Small_video p {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%);
+  letter-spacing: 5px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 100;
+}
+.homePage_wrap .news {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  background-color: #fff;
+  z-index: 10;
+}
+.homePage_wrap .news .content {
+  position: absolute;
+  left: 50%;
+  top: -70px;
+  transform: translateX(-50%);
+  width: 1000px;
+  height: 700px;
+  background-color: #fff;
+  z-index: 15;
+}
+.homePage_wrap .news .content .title {
+  font-size: 60px;
+  font-weight: 600;
+  color: #333333;
+  padding: 80px 0 0 100px;
+}
+.homePage_wrap .news .content .subhead {
+  display: inline-block;
+  width: 600px;
+  letter-spacing: 5px;
+  font-size: 20px;
+  font-weight: 100;
+  margin: 50px 0 0 100px;
+  padding-bottom: 20px;
+  border-bottom: 1px dotted  ;
+}
+.homePage_wrap .news .content .news_1 {
+  position: absolute;
+  left: 100px;
+  top: 210px;
+  width: 400px;
+  overflow: hidden;
+}
+.homePage_wrap .news .content .news_1 img {
+  width: 500px;
+}
+.homePage_wrap .news .content .news_2 {
+  position: absolute;
+  left: 500px;
+  top: 210px;
+  width: 400px;
+  overflow: hidden;
+}
+.homePage_wrap .news .content .news_2 img {
+  width: 500px;
+}
+.homePage_wrap .news .content .information {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  font-size: 15px;
+}
+.homePage_wrap .news .content .information .information_item {
+  float: left;
+  margin: 30px;
+  letter-spacing: 2px;
+}
+.homePage_wrap .news .content .information .information_item ul {
+  width: 360px;
+}
+.homePage_wrap .news .content .information .information_item ul li {
+  padding-bottom: 15px;
+}
+.homePage_wrap .news .content .information .information_item ul li a {
+  transition: all 1s;
+}
+.homePage_wrap .news .content .information .information_item ul li a:hover {
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 5px;
+}
+.homePage_wrap .footer {
+  width: 100%;
+  height: 521px;
+  background-image: url("../../img/index_page/fontbj.jpg");
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+  padding-top: 150px;
+  box-sizing: border-box;
+}
+.homePage_wrap .footer .word {
+  font-size: 16px;
+  padding: 10px 0;
+}
+.homePage_wrap .footer .uav {
+  font-size: 25px;
+  padding: 10px 0 50px;
+}
+.homePage_wrap .footer .copy {
+  font-size: 12px;
+  color: #828282;
+  padding-top: 30px;
+}

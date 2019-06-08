@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>最新动态---有哪些技术会影响无人机的精准导航定位</title>
+    <link rel="stylesheet" href="css/news_dynamic/reset.css">
+    <link rel="stylesheet" href="css/news_dynamic/page.css">
+    <link rel="stylesheet" href="css/navigation/navigation.css">
+
+</head>
+<body>
+<div id="wrap">
+
+    <!--导航页面-->
+    <div class="nav-wrap">
+        <div class="nav_background"></div>
+        <h1 class="logo">
+            <img src="img/navigation/logo.png" alt="">
+        </h1>
+        <div class="key">
+            <div class="key_ago">一MENU</div>
+            <span class="key_later key_later_top"></span>
+            <span class="key_later key_later_bottom"></span>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="../index.html" class="item-anchor" target="_blank">网站首页</a>
+            </li>
+            <li class="nav-item">
+                <a href="../about%20Us/about%20Us.html" class="item-anchor" target="_blank">关于大正</a>
+            </li>
+            <li class="nav-item">
+                <a href="../new_product/new_product.html" class="item-anchor" target="_blank">最新产品</a>
+            </li>
+            <li class="nav-item">
+                <a href="../news_dynamic/news_dynamic.html" class="item-anchor" target="_blank">新闻动态</a>
+            </li>
+            <li class="nav-item">
+                <a href="../safety_flight/SafeFlight.html" class="item-anchor" target="_blank">安全飞行</a>
+            </li>
+            <li class="nav-item">
+                <a href="../contact%20us/contact_us.html" class="item-anchor" target="_blank">联系我们</a>
+            </li>
+        </ul>
+    </div>
+    <script src="js/navigation/navigation.js"></script>
+    <script>
+        <!--导航页面js调用-->
+        navigation();
+    </script>
+    <div class="nd_index">
+        <img src="img/news_dynamic/index.jpg" alt="">
+    </div>
+    <div class="contentWrap">
+        <div class="contentTop">
+            <h1>LATEST NEWS</h1>
+            <h2>最新动态</h2>
+            <p>全面提升拍摄乐趣</p>
+        </div>
+
+        <div class="contentMid">
+            <div class="contentMidWrap">
+                <div class="one">
+                    <div class="oneWrap">
+                        <div class="oneTop">
+                            <h2 class="oneTop_P"> ·有哪些技术会影响无人机的精准导航定位</h2>
+
+                        </div>
+                        <div class="oneDate">
+                            <div class="oneDate_time">
+                                <i>2019/06/02 19:20:20</i>
+                            </div>
+                        </div>
+                        <div class="oneContent">
+
+                            <p>英特尔、高通、英伟达等多平台召开无人机发布会宣布进军消费级无人机市场，此举使得消费级的航拍无人机炙手可热。与此同时，用于检测地球磁场的MEMS磁传感器也广泛应用到航拍无人机导航系统，以提升导航定位的精度及速度。</p>
+                            <p>航拍无人机根据具体应用可将其划分为专业以及消费级别。消费级无人机航拍系统常采用来自手机等消费类产品的磁传感器，而专业级无人机由于对航拍稳定性以及航拍质量的严格要求，因此常使用工业级的MEMS磁传感器以保障导航定位的精确性。</p>
+                            <p>目前航拍无人的导航方式综合采用了GPS+惯性导航的方式。惯性导航通常是由两个或以上的传感器(陀螺仪、加速度计、磁场计和/或GPS)信息用于飞机相对地球的航向矢量和速度矢量。 加速度计用于测量加速度。借助一个三轴加速度计可以测得一个固定平台相对地球表面的运动方向，但是一旦平台运动起来，情况就会变得复杂的多。如果平台做自由落体，加速度计测得的加速度值为零。如果平台朝某个方向做加速度运动，各个轴向加速度值会含有重力产生的加速度值，使得无法获得真正的加速度值。例如，安装在60度横滚角飞机上的三轴加速度计会测得2G的垂直加速度值，而事实上飞机相对地区表面是60度的倾角。因此，单独使用加速度计无法使飞机保持一个固定的航向。</p>
+                            <p>陀螺仪测量机体围绕某个轴向的旋转角速率值。使用陀螺仪测量飞机机体轴向的旋转角速率时，如果飞机在旋转，测得的值为非零值，飞机不旋转时，测量的值为零。因此，在60度横滚角的飞机上的陀螺仪测得的横滚角速率值为零，同样在飞机做水平直线飞行时，角速率值为零。可以通过角速率值的时间积分来估计当前的横滚角度，前提是没有误差的累积。陀螺仪测量的值会随时间漂移，经过几分钟甚至几秒钟定会累积出额外的误差来，而最终会导致对飞机当前相对水平面横滚角度完全错误的认知。因此，单独使用陀螺仪也无法保持飞机的特定航向。</p>
+                            <p>由此可以看出加速度计在较长时间的测量值(确定飞机航向)是正确的，而在较短时间内由于信号噪声的存在，则会出现误差。陀螺仪在较短时间内则比较准确而较长时间则会有与漂移而存有误差。因此，需要两者(相互调整)来确保航向的正确。</p>
+                            <p>事实上，即使使用了两者，也只可以用于测得飞机的俯仰和横滚角度。对于偏航角度，由于偏航角和重力方向正交，无法用加速度计测量得到，而由于MEMS磁传感器对磁场变化和惯性力十分敏感，因此常用作校准测量偏航角度的陀螺仪的漂移值。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--页脚-->
+        <footer class="footer">
+            <img src="img/navigation/logo.png" alt="">
+            <p class="word">换个角度看世界</p>
+            <p class="uav">UAV</p>
+            <p class="copy">版权所有：黑龙江省大正赛富投资管理有限公司     网站建设：中企动力哈尔滨黑ICP备案********号</p>
+        </footer>
+    </div>
+</div>
+</body>
+</html>

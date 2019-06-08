@@ -1,0 +1,109 @@
+html,body {
+    height: 100%;
+}
+.nav-wrap{
+    position: fixed;
+    top: -650px;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 650px;
+    z-index: 50;
+    transition: all 3s;
+}
+.nav_background{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+    /*background-image: url("img/navigation/dhbj4.jpg");*/
+    background-image: url("../../img/navigation/dhbj4.jpg");
+    background-size: 1620px 980px;
+    background-repeat: no-repeat;
+    transition: opacity 2s linear 1s;
+
+}
+.nav-wrap  .logo{
+    position: fixed;
+    left:100px;
+    top: 50px;
+}
+.key {
+    position: fixed;
+    right: 100px;
+    top: 50px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.3);
+}
+.key .key_ago{
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 80px;
+    transition: .3s;
+}
+.nav-wrap .nav-list{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    transform: translate(-50%,-50%);
+}
+
+
+
+
+.item-anchor{
+    /*text-decoration: none;*/
+    font-size: 21px;
+    font-weight: 100;
+    position: relative;
+    top: 50%;
+    line-height: 60px;
+    overflow: hidden;
+    transition: 1s;
+    padding: 2px 5px;
+    color:#888;
+}
+
+.item-anchor:hover {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 8px;
+}
+
+.key_later{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+    /*display: inline-block;*/
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    transition: 1s;
+    /*opacity: 0;*/
+}
+.key_later_top{
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.key_later_bottom{
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+.key:hover{
+    cursor: pointer;
+}
+.key:hover .key_later_top{
+    transform: translate(-50%,-50%) rotate(15deg);
+}
+.key:hover .key_later_bottom{
+    transform: translate(-50%,-50%) rotate(-15deg);
+}
+/*.nav-wrap .nav-list .nav-item{*/
+/*opacity: 0;*/
+/*}*/
