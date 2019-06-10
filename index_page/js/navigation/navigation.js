@@ -1,6 +1,5 @@
 (function (w) {
         w.navigation=function () {
-            console.log(1)
             var key=document.querySelector(".key");
             var keyAgo=key.querySelector(".key_ago");
             var keyLater=key.querySelectorAll(".key_later");
